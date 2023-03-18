@@ -3,7 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Rubik', sans-serif;
-   align-items: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .commentDiv {
@@ -46,6 +47,10 @@ body {
     font-size: 16px;
 }
 
+#addCommentInput:hover {
+    border: solid 1px rgb(85, 36, 169);
+}
+
 #submitBtn {
     margin-top: -65px;
     padding: 15px 27px;
@@ -57,12 +62,17 @@ body {
     font-weight: 500;
 }
 
+#submitBtn:hover {
+    background-color: rgb(113, 101, 136);
+}
+
 #replies {
     display: flex;
     flex-direction: column;
     width: 61%;
     align-items: flex-end;
-    margin-right: -57px;
+    /* margin-right: -57px; */
+    margin-right: -4.85%;
     border-left: solid 1px lightgray;
 }
 
@@ -104,9 +114,17 @@ h4 {
     font-size: 1rem;
 }
 
+.makePurple:hover {
+    color: rgb(113, 101, 136);
+}
+
 .makeRed {
     color: hsl(358, 79%, 66%);
     margin-right: 10px;
+}
+
+.makeRed:hover {
+    color: hsl(357, 100%, 86%);
 }
 
 .commentBody {

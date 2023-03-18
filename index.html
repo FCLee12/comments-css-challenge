@@ -27,19 +27,19 @@
     <!-- Comment #1 -->
     <div class="upvote">
       <img alt="plus" src="./images/icon-plus.svg" />
-      <span class="upvoteNumber">12</span>
+      <span class="makePurple">12</span>
       <img alt="minus" src="./images/icon-minus.svg" />
     </div>
     <div class="contentDiv">
       <div class="commentHeader">
-        <div>
+        <div class="leftCommentHeader">
           <img src="./images/avatars/image-amyrobson.png" alt="profile" />
           <h4>amyrobson</h4>
           <p class="postedDate">1 month ago</p>
         </div>
-        <span>
-          Reply
+        <span class="rightCommentHeader">
           <img alt="reply" src="./images/icon-reply.svg" />
+          <span class="makePurple">Reply</span>
         </span>
       </div>
       <div class="commentBody">
@@ -52,19 +52,19 @@
     <!-- Comment #2 -->
     <div class="upvote">
       <img alt="plus" src="./images/icon-plus.svg" />
-      <span class="upvoteNumber">5</span>
+      <span class="makePurple">5</span>
       <img alt="minus" src="./images/icon-minus.svg" />
     </div>
     <div class="contentDiv">
       <div class="commentHeader">
-        <div>
+        <div class="leftCommentHeader">
           <img src="./images/avatars/image-maxblagun.png" alt="profile" />
           <h4>maxblagun</h4>
           <p class="postedDate">2 weeks ago</p>
         </div>
-        <span>
-          Reply
+        <span class="rightCommentHeader">
           <img alt="reply" src="./images/icon-reply.svg" />
+          <span class="makePurple">Reply</span>
         </span>
       </div>
       <div class="commentBody">
@@ -73,54 +73,65 @@
     </div>
   </div>
 
-  <div class="commentDiv">
-    <!-- Comment #3 (Reply to comment #2) -->
-    <div class="upvote">
-      <img alt="plus" src="./images/icon-plus.svg" />
-      <span class="upvoteNumber">4</span>
-      <img alt="minus" src="./images/icon-minus.svg" />
-    </div>
-    <div class="contentDiv">
-      <div class="commentHeader">
-        <div>
-          <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-          <h4>ramsesmiron</h4>
-          <p class="postedDate">1 week ago</p>
+  <div id="replies">
+    <div class="commentDiv">
+      <!-- Comment #3 (Reply to comment #2) -->
+      <div class="upvote">
+        <img alt="plus" src="./images/icon-plus.svg" />
+        <span class="makePurple">4</span>
+        <img alt="minus" src="./images/icon-minus.svg" />
+      </div>
+      <div class="contentDiv">
+        <div class="commentHeader">
+          <div class="leftCommentHeader">
+            <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+            <h4>ramsesmiron</h4>
+            <p class="postedDate">1 week ago</p>
+          </div>
+          <span class="rightCommentHeader">
+            <img alt="reply" src="./images/icon-reply.svg" />
+            <span class="makePurple">Reply</span>
+          </span>
         </div>
-        <span>
-          Reply
-          <img alt="reply" src="./images/icon-reply.svg" />
-        </span>
+        <div class="commentBody">
+          <p><strong><span class="makePurple">@maxblagun</span></strong> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+        </div>
       </div>
-      <div class="commentBody">
-        <p>@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+    </div>
+
+
+    <div class="commentDiv" id="lastComment">
+      <!-- Comment #4 (Reply to comment #2) -->
+      <div class="upvote">
+        <img alt="plus" src="./images/icon-plus.svg" />
+        <span class="makePurple">2</span>
+        <img alt="minus" src="./images/icon-minus.svg" />
       </div>
+      <div class="contentDiv">
+        <div class="commentHeader">
+          <div class="leftCommentHeader">
+            <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+            <h4>juliusomo</h4>
+            <p class="postedDate">2 days ago</p>
+          </div>
+          <span class="rightCommentHeader">
+            <img alt="delete" src="./images/icon-delete.svg" />
+            <span class="makeRed">Delete</span>
+            <img alt="edit" src="./images/icon-edit.svg" />
+            <span class="makePurple">Edit</span>
+          </span>
+        </div>
+        <div class="commentBody">
+          <p><strong><span class="makePurple">@ramsesmiron</span></strong> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+        </div>
+      </div>  
     </div>
   </div>
-
-  <div class="commentDiv">
-    <!-- Comment #4 (Reply to comment #2) -->
-    <div class="upvote">
-      <img alt="plus" src="./images/icon-plus.svg" />
-      <span class="upvoteNumber">2</span>
-      <img alt="minus" src="./images/icon-minus.svg" />
-    </div>
-    <div class="contentDiv">
-      <div class="commentHeader">
-        <div>
-          <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-          <h4>juliusomo</h4>
-          <p class="postedDate">2 days ago</p>
-        </div>
-        <span>
-          Reply
-          <img alt="reply" src="./images/icon-reply.svg" />
-        </span>
-      </div>
-      <div class="commentBody">
-        <p>@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
-      </div>
-    </div>  
+  
+  <div id="addCommentDiv">
+    <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+    <textarea placeholder="Add a comment..." id="addCommentInput"></textarea>
+    <button id="submitBtn">Send</button>
   </div>
 
   

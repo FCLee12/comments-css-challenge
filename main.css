@@ -25,12 +25,26 @@ h4 {
 .upvote {
     display: inline-flex;
     flex-direction: column;
-    background-color: red;
-    padding: 5px;
+    background-color: hsl(238, 100%, 95%);
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    align-self: center;
+    border-radius: 6px;
+    width: 30px;
+    min-width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.upvoteNumber {
+    color: rgb(85, 36, 169);
+    font-size: 1.1rem;
 }
 
 .commentHeader {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
